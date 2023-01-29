@@ -74,9 +74,4 @@ public class ActionsDemo extends BaseTest {
         Helper.pause(3000);
 
     }
-
-
-
-
-
 }
