@@ -27,4 +27,5 @@ public class ScreenShot extends BaseTest {
 //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
     }
+
 }

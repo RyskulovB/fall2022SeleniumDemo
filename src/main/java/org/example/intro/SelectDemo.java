@@ -11,7 +11,7 @@ public class SelectDemo extends BaseTest {
     public void selectTest () {
 
         driver.navigate().to("https://demoqa.com/select-menu");
-        WebElement selectOption = driver.findElement(By.xpath("//div[@class = ' css-1hwfws3']"));
+        WebElement selectOption = driver.findElement(By.xpath("(//div[@class = ' css-tlfecz-indicatorContainer'])[1]"));
         selectOption.click();
 
         Select select = new Select(selectOption);

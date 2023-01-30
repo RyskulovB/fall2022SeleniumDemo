@@ -24,15 +24,12 @@ public class BrowserHelper {
     public void  goForward() {
         driver.navigate().forward();
     }
-
     public void  refresh() {
         driver.navigate().refresh();
     }
-
     public Set<String> getWindowHandles () {
         return  driver.getWindowHandles();
     }
-
     public  void switchToWindow(int index) {
         LinkedList<String> windowsId = new LinkedList<String>(getWindowHandles());
         if (index < 0 || index > windowsId.size()) {
@@ -40,12 +37,8 @@ public class BrowserHelper {
         }
         driver.switchTo().window(windowsId.get(index));
     }
-
     public void switchToParent() {
         LinkedList<String> windowsId = new LinkedList<String>(getWindowHandles());
         driver.switchTo().window(windowsId.get(0));
     }
-
-
-
 }

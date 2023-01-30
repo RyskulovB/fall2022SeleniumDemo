@@ -6,7 +6,5 @@ public class JSExecutor extends BaseTest {
 
     @Test
     public void test1() {
-
-
     }
 }
